@@ -22,11 +22,13 @@ def resolve_font(bold=False):
 
 
 def ensure_channelbag(action,slot):
-    """Blender 5.x slot-aware bags vs 4.4/4.5 legacy channelbags."""
+    """Blender 5.x slot-aware bags vs 4.4/4.5 channelbag helpers."""
     import bpy_extras.anim_utils as A
     if hasattr(A,'action_ensure_channelbag_for_slot'):
         return A.action_ensure_channelbag_for_slot(action,slot)
-    return A.action_ensure_channelbag(action)
+    if hasattr(A,'action_ensure_channelbag'):
+        return A.action_ensure_channelbag(action)
+    return A._ensure_channelbag_exists(action,slot)
 
 def validate_percent(value):
     if not 1<=value<=100:
