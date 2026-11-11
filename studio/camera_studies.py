@@ -9,9 +9,11 @@ import sys
 from pathlib import Path
 
 import bpy
-import blender_flat as F
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+import blender_flat as F
+
 ASPECT = 16 / 9
 parser = argparse.ArgumentParser()
 parser.add_argument('--source', type=Path, required=True)
