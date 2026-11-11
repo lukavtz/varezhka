@@ -1,0 +1,4 @@
+# Native drawing needs Blender 5.x and no pip packages inside Blender.
+# Use Python 3.10+ to run scripts/render_example.py.
+# FFmpeg is optional and needed only for --encode.
+# This requirements file is intentionally empty: no Python packages to install.

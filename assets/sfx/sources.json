@@ -1,0 +1,182 @@
+{
+  "license_reference": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "note": "CC0 sources do not require attribution. Names and source links are retained for traceability. Demos combine these assets with original project synthesis. Do not treat synthesized motor, power and tension as field recordings.",
+  "sources": [
+    {
+      "path": "source/elevator_door.wav",
+      "creator": "PagDev",
+      "source_page": "https://opengameart.org/content/elevatordoor",
+      "direct_download": "https://opengameart.org/sites/default/files/elevator_door.wav",
+      "license": "CC0-1.0",
+      "acquisition": "downloaded direct"
+    },
+    {
+      "path": "source/elevatording.ogg",
+      "creator": "fvcalderan",
+      "source_page": "https://opengameart.org/content/elevator-ding",
+      "direct_download": "https://opengameart.org/sites/default/files/elevatording_0.ogg",
+      "license": "CC0-1.0",
+      "acquisition": "downloaded direct"
+    },
+    {
+      "path": "source/kenney-interface/bong_001.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/click_001.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/click_004.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/error_006.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/glitch_002.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/glitch_004.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/select_008.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/switch_001.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/switch_004.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "source/kenney-interface/switch_007.ogg",
+      "creator": "Kenney",
+      "source_page": "https://kenney.nl/assets/interface-sounds",
+      "direct_download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "license": "CC0-1.0",
+      "acquisition": "copied from local installed brag skill; upstream ZIP request returned HTML"
+    },
+    {
+      "path": "synthetic/motor-hum.wav",
+      "creator": "Original procedural synthesis for this project",
+      "source_page": null,
+      "direct_download": null,
+      "license": "Original project asset",
+      "acquisition": "generated locally; no third-party recordings"
+    },
+    {
+      "path": "synthetic/power-down.wav",
+      "creator": "Original procedural synthesis for this project",
+      "source_page": null,
+      "direct_download": null,
+      "license": "Original project asset",
+      "acquisition": "generated locally; no third-party recordings"
+    },
+    {
+      "path": "synthetic/metal-creak.wav",
+      "creator": "Original procedural synthesis for this project",
+      "source_page": null,
+      "direct_download": null,
+      "license": "Original project asset",
+      "acquisition": "generated locally; no third-party recordings"
+    },
+    {
+      "path": "synthetic/low-tension.wav",
+      "creator": "Original procedural synthesis for this project",
+      "source_page": null,
+      "direct_download": null,
+      "license": "Original project asset",
+      "acquisition": "generated locally; no third-party recordings"
+    }
+  ],
+  "recommended_packs": [
+    {
+      "creator": "Kenney",
+      "name": "Interface Sounds",
+      "page": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "status": "10 selected local copies; upstream zip was not downloaded successfully"
+    },
+    {
+      "creator": "Kenney",
+      "name": "Sci-fi Sounds",
+      "page": "https://kenney.nl/assets/sci-fi-sounds",
+      "license": "CC0-1.0",
+      "status": "recommended; upstream zip was not downloaded successfully"
+    }
+  ],
+  "demos": [
+    {
+      "path": "demos/01-elevator.wav",
+      "duration_s": 7.5,
+      "elements": [
+        "click_001.ogg",
+        "elevator_door.wav",
+        "motor-hum.wav",
+        "elevatording.ogg"
+      ]
+    },
+    {
+      "path": "demos/02-power-out.wav",
+      "duration_s": 7.5,
+      "elements": [
+        "motor-hum.wav",
+        "switch_004.ogg",
+        "glitch_004.ogg",
+        "power-down.wav",
+        "low-tension.wav"
+      ]
+    },
+    {
+      "path": "demos/03-tension.wav",
+      "duration_s": 7.5,
+      "elements": [
+        "low-tension.wav",
+        "metal-creak.wav",
+        "elevator_door.wav"
+      ]
+    }
+  ]
+}

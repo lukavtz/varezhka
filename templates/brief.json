@@ -1,0 +1,78 @@
+{
+  "template_version": "1.0",
+  "status": "intake",
+  "project_name": null,
+  "topic": null,
+  "purpose": null,
+  "audience": null,
+  "language": "ru",
+  "format": {
+    "orientation": null,
+    "aspect_ratio": null,
+    "width": null,
+    "height": null,
+    "fps": 30,
+    "duration_seconds": null
+  },
+  "visual": {
+    "mode": null,
+    "suggested_mode": "native_blender_flat_cartoon",
+    "hand_style": "cartoon_mittens",
+    "character_angle": "three_quarter_two_readable_eyes",
+    "palette": null,
+    "pixel_logical_resolution": null,
+    "reference_files": [],
+    "reference_urls": [],
+    "must_preserve": [],
+    "avoid": []
+  },
+  "characters": [],
+  "advertising": {
+    "enabled": false,
+    "product_or_service": null,
+    "allowed_claims": [],
+    "cta_text": null,
+    "destination_url": null
+  },
+  "voice": {
+    "method": null,
+    "provider_if_generated": "elevenlabs",
+    "api_key_environment_variable": "ELEVENLABS_API_KEY",
+    "roles": [],
+    "provided_audio_files": [],
+    "audition_required": true,
+    "approved_generation_scope": null
+  },
+  "subtitles": {
+    "enabled": null,
+    "timing_mode": null,
+    "fill": "white",
+    "outline": "thin_dark",
+    "font_mode": "match_selected_visual_mode",
+    "position": "scene_safe_center_or_slightly_below",
+    "avoid_faces_hands_and_platform_ui": true
+  },
+  "sound": {
+    "music_enabled": null,
+    "sfx_enabled": true,
+    "mood": null,
+    "preferred_sounds": [],
+    "unwanted_sounds": [],
+    "voice_must_remain_clear": true
+  },
+  "production": {
+    "framework": "blender_native",
+    "image_generation_allowed": false,
+    "review_mode": null,
+    "initial_review_frames": 5,
+    "deliver_editable_project": true,
+    "working_directory": null,
+    "output_directory": null
+  },
+  "notes": [
+    "null means not chosen yet; ask only for information that changes the result",
+    "suggested settings are not user approval",
+    "store no API keys or other secrets in this file",
+    "resolve project file paths relative to the new project"
+  ]
+}

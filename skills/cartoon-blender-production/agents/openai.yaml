@@ -1,0 +1,4 @@
+interface:
+  display_name: "Мультфильмы в Blender"
+  short_description: "Бриф, рисунок, камера, звук и проверка мультфильма"
+  default_prompt: "Используй $cartoon-blender-production: уточни мой бриф с вариантами и подготовь мультфильм в Blender."

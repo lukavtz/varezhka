@@ -1,0 +1,57 @@
+ИСТОРИЧЕСКИЙ РЕФЕРЕНС. Не выполнять автоматически. Текущие правила: README.md и основной скилл. Старые версии, Remotion и паузы на одобрение могут не соответствовать новому брифу.
+
+Ты — мой технический ассистент. Подготовь этот компьютер к производству анимированных роликов про выживание. Работай сам: проверяй, что уже стоит, ставь недостающее. Меня зови только в случаях из раздела «Когда позвать меня».
+
+ПАПКА ПРОЕКТА
+Создай в текущей папке структуру:
+survival-studio/
+  channel/     — стиль канала, герой и собака (общие для всех роликов)
+  episodes/    — по папке на каждый ролик
+  assets_3d/   — бесплатные 3D-ассеты
+  fonts/       — шрифты
+  music/       — сюда я кладу музыку
+  tools/       — твои скрипты и голоса
+  lists.md     — списки катастроф и мест (я вставлю сам)
+
+УСТАНОВКА
+1. Определи систему: macOS или Windows. Пакетный менеджер: на Mac — Homebrew (если его нет, поставь по инструкции с brew.sh), на Windows — winget.
+2. Базовые инструменты: git, Node.js 20+, Python 3.11+, ffmpeg. Проверь версии.
+3. uv (нужен для Blender MCP).
+   Mac: brew install uv
+   Windows: powershell -c "irm https://astral.sh/uv/install.ps1 | iex", потом добавь %USERPROFILE%\.local\bin в PATH.
+4. Blender 4.x.
+   Mac: brew install --cask blender
+   Windows: winget install BlenderFoundation.Blender
+   Проверь: blender --version (на Mac бинарник лежит в /Applications/Blender.app/Contents/MacOS/Blender).
+5. Blender MCP — через него ты сам управляешь Blender.
+   uvx blender-mcp install-addon
+   blender --background --python-expr "import bpy; bpy.ops.preferences.addon_enable(module='blender_mcp'); bpy.ops.wm.save_userpref()"
+   claude mcp add blender uvx blender-mcp
+6. Remotion — сборка видео кодом.
+   В survival-studio/ создай проект video/ через npx create-video@latest (шаблон Blank, TypeScript) и выполни npm install.
+   Поставь официальные навыки Remotion: npx skills add remotion-dev/skills
+7. svg-creator-skill — навык для 2D-иллюстраций.
+   git clone https://github.com/upbrew-tech/svg-creator-skill во временную папку и скопируй её в .claude/skills/svg-creator этого проекта.
+8. Python-окружение survival-studio/.venv, в него:
+   pip install faster-whisper deepfilternet
+   На Mac с Apple Silicon дополнительно: pip install mlx-whisper
+9. Озвучка без микрофона (вариант C): pip install piper-tts и скачай русский голос Piper (например ru_RU-denis-medium) в tools/voices/.
+10. Шрифты с кириллицей в fonts/, только с официальных источников (Google Fonts, GitHub rsms/inter, JetBrains):
+   Inter Display (Black, ExtraBold), Montserrat (ExtraBold, Black), Oswald (Bold), JetBrains Mono (Regular, Bold), Caveat (Bold).
+11. Бесплатные 3D-ассеты (лицензия CC0) в assets_3d/:
+   Quaternius — Farm Animal Pack, Animated Animals, Ultimate Nature;
+   Kenney — Nature Kit, City Kit.
+   Если сайт просит нажать кнопку в браузере — не обходи, дай мне ссылки, я скачаю сам.
+12. Сохрани INSTALL.md: что поставил, какие версии, какие команды запускал.
+
+КОГДА ПОЗВАТЬ МЕНЯ
+- Нужен пароль администратора. Напиши команду — введу сам.
+- Нужно скачать что-то руками в браузере.
+- Нужно перезапустить Claude Code, чтобы появился Blender MCP. Скажи: «перезапусти меня и напиши "продолжай"».
+- Нужно один раз включить связь в Blender. Открой Blender и попроси меня нажать N → вкладка MCP for Blender → Start MCP Server (в некоторых версиях кнопка называется Connect to Claude).
+
+ФИНАЛЬНАЯ ПРОВЕРКА — покажи мне результат каждого пункта
+1. Через Blender MCP создай куб на плоскости и отрендери кадр 1280×720 в PNG.
+2. В Remotion отрендери 3-секундный ролик: белый текст «РАБОТАЕТ» шрифтом Inter Display Black на тёмном фоне. Проверь, что кириллица на месте.
+3. Распознай 5 секунд любого аудио через faster-whisper с таймкодами слов.
+Если что-то не прошло — почини и повтори. Когда всё зелёное, напиши «Студия готова».

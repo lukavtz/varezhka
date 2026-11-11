@@ -1,0 +1,24 @@
+{
+  "camera_pinned": true,
+  "pan_scene_units": [
+    140,
+    70
+  ],
+  "zoom_scale_multiplier": 0.65,
+  "projected_bbox_before": [
+    0.4288923144340515,
+    0.2732592523097992,
+    0.5726509094238281,
+    0.3167891800403595
+  ],
+  "projected_bbox_after": [
+    0.4288922846317291,
+    0.2732592523097992,
+    0.5726509094238281,
+    0.3167892098426819
+  ],
+  "maximum_projected_bbox_error": 2.9802322387695312e-08,
+  "visibility_sample_check": "passed",
+  "world_space_option": "pin_to_camera=False",
+  "timing_source": "illustrative fixture, not real TTS"
+}

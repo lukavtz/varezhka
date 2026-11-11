@@ -1,0 +1,20 @@
+{
+  "source": "Illustrative timing fixture, not audio-derived alignment",
+  "words": [
+    {
+      "text": "ЭТО",
+      "start": 0,
+      "end": 0.6
+    },
+    {
+      "text": "ПРИМЕР",
+      "start": 0.6,
+      "end": 1.3
+    },
+    {
+      "text": "СУБТИТРОВ",
+      "start": 1.3,
+      "end": 2.0
+    }
+  ]
+}

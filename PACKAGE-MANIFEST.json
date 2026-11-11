@@ -1,0 +1,825 @@
+{
+  "package": "cartoon-workflow-kit",
+  "release_date": "2026-11-09",
+  "hash_algorithm": "SHA256",
+  "note": "Integrity inventory; not a digital signature.",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 221,
+      "sha256": "039160ab0b0ea81fc530eb7c51a2c82c73111c8db91aa6d53472d54db0cada2c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "c6995d7958fea9af9276dd1533b46f6b70324d5bf3d40fb48ff67b7591dfc174"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "1aa388b3ff3dc942537cb6853d38ab858beb891ce04f0607f10a94e95da38e2b"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 89,
+      "sha256": "95766e62b92444ebdc6fc4e12f8e8daa62cea7471390a0f2ee0b2a13a2692ba9"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1813,
+      "sha256": "704154b749d09db9da9ed6dee1519e9ad034dc015d36ddf9f64ac979bffd6454"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3071cceff78b097632312d4701bedd5406499d6e63c44db8b186225ccaaf7ba4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f059493325c6e583e78ece7735adb242efc8bc37e88d7c309a38939afaf14a5b"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 2869,
+      "sha256": "5d6d7c9864eed99870ca266785b36114a2c6dd3cadbb74342237246b6a348850"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 6842,
+      "sha256": "f568711c537a0a6051b7725c3890e9315d0ddbeb86f7a8baf317d5ff11857ecc"
+    },
+    {
+      "path": "assets/fonts/LICENSE-OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb"
+    },
+    {
+      "path": "assets/fonts/NotoSans-Bold.ttf",
+      "bytes": 575740,
+      "sha256": "c976e4b1b99edc88775377fcc21692ca4bfa46b6d6ca6522bfda505b28ff9d6a"
+    },
+    {
+      "path": "assets/fonts/NotoSans-Regular.ttf",
+      "bytes": 569208,
+      "sha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5"
+    },
+    {
+      "path": "assets/readme/hero-character.png",
+      "sha256": "3f2379eb149a48b6435eabf3caa67dc2c812b6b08a4171ad8270ef33151755b7"
+    },
+    {
+      "path": "assets/readme/hero-light.png",
+      "sha256": "a221d5b08e735c296bae6fdf1e3fbfb66d0c9dac0324e7c5b562fc01a86049f4"
+    },
+    {
+      "path": "assets/readme/hero.png",
+      "sha256": "d03162678b0f256025b3dc4ac0d8c25b5981c38660cbca79e58aaa829cb7ae51"
+    },
+    {
+      "path": "assets/readme/hero.svg",
+      "sha256": "6161ae2349bd95a9eb8f562624e83875a0676a93a124cdd8b3c08ecbe20b21ab"
+    },
+    {
+      "path": "assets/sfx/audio-qa.json",
+      "bytes": 490,
+      "sha256": "f4094e3f9916fe98a16110a954f81b3363d90d4a5c5252b3d41cb8a4e77c47a0"
+    },
+    {
+      "path": "assets/sfx/demos/01-elevator.wav",
+      "bytes": 1440044,
+      "sha256": "97777754f66047c0ef485ec5a05b4ca12b00ac60d15b579b9ddbf5b858d60d31"
+    },
+    {
+      "path": "assets/sfx/demos/02-power-out.wav",
+      "bytes": 1440044,
+      "sha256": "d06e0a7ed34f7abffe7bb069f5f483c619fea89a227c0c8053cbd76271294ce7"
+    },
+    {
+      "path": "assets/sfx/demos/03-tension.wav",
+      "bytes": 1440044,
+      "sha256": "7ef0d4bcf2f5226f7e13134f464f9397ad896c05d80dbbdb408cb579fa1016fc"
+    },
+    {
+      "path": "assets/sfx/make_demos.py",
+      "bytes": 6318,
+      "sha256": "ac88d8ed22f84c08ae511f74ab09fa52edc9ee4ae126fae3fd41f5ffb639dd82"
+    },
+    {
+      "path": "assets/sfx/source/elevator_door.wav",
+      "bytes": 1261972,
+      "sha256": "56307cd725cb7756dd7319487c19b0e5f79968816df228f14803406e875226fa"
+    },
+    {
+      "path": "assets/sfx/source/elevatording.ogg",
+      "bytes": 11949,
+      "sha256": "04b9e67aa1e5a4e71d1b038bfefd2db4d64f223a17749f0a2faeaf193b48a7b6"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/bong_001.ogg",
+      "bytes": 4848,
+      "sha256": "d21d0f0b782445db579d11e2506b24cd1ac9d664ee33aeaf807761aa7b6fd710"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/click_001.ogg",
+      "bytes": 4876,
+      "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/click_004.ogg",
+      "bytes": 4486,
+      "sha256": "09e2c1b643b71b9aff9932b4e02d78db116446b9a14b00a5b2a9b28d2668fd8e"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/error_006.ogg",
+      "bytes": 8288,
+      "sha256": "a97513d7fd2b12b1210c423be943b4c1ab0e899b11db95855e9b74836e646ae0"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/glitch_002.ogg",
+      "bytes": 5473,
+      "sha256": "1da06a2e63ce131f5e0316ca27c75fc0d672db7a8f9b986c70693f2bd992eabc"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/glitch_004.ogg",
+      "bytes": 5225,
+      "sha256": "d0f4db4d12f88592bc328bd621d356d099eaa2dda37bab37a6cf17891c5026d1"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/select_008.ogg",
+      "bytes": 6339,
+      "sha256": "f703b6b1c62dae1c246a46d5c2442802588f68be2df4d17e0d65cf7e0dbfc826"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/switch_001.ogg",
+      "bytes": 6753,
+      "sha256": "3b74efad87f1e69dbd1d05c5ad952ab90859b5a3d11da6ec5bd79b4f03b42afa"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/switch_004.ogg",
+      "bytes": 7248,
+      "sha256": "541c19cc1ab712a9efc5765df602e7d0da09d9cafdd297ce1e19b092289fd62f"
+    },
+    {
+      "path": "assets/sfx/source/kenney-interface/switch_007.ogg",
+      "bytes": 7921,
+      "sha256": "eeaf60c2abc7e1b715e2b032401bcbf6b3753b77f96b238f861a034a75515967"
+    },
+    {
+      "path": "assets/sfx/sources.json",
+      "bytes": 7661,
+      "sha256": "493c11a42719cbffd32c6b5fbe7c6bb498c510ec980bf0235fc6f0b7cdfda4cc"
+    },
+    {
+      "path": "assets/sfx/synthetic/low-tension.wav",
+      "bytes": 1420844,
+      "sha256": "7b9b9a19fedf13027896368fdd7802a2576e6e8428c431dc3cdb8a9e64ffdf52"
+    },
+    {
+      "path": "assets/sfx/synthetic/metal-creak.wav",
+      "bytes": 460844,
+      "sha256": "cea0558d83b94039982f6d88945907c8a93c8a83f18c5f3e57122e89566460ab"
+    },
+    {
+      "path": "assets/sfx/synthetic/motor-hum.wav",
+      "bytes": 1382444,
+      "sha256": "6bf65b2c10519efd919272ff50599797b788c677e4502cc94ec9e949ea89246f"
+    },
+    {
+      "path": "assets/sfx/synthetic/power-down.wav",
+      "bytes": 480044,
+      "sha256": "17f0c232acc3d8ab7763abd504f5553d70c2cc27a4016767908aea7556b7d47e"
+    },
+    {
+      "path": "docs/audio.md",
+      "bytes": 10653,
+      "sha256": "37da6199a4824f793bbeebdd53def12d19da25bbc9bd5534192db551a0ccf02a"
+    },
+    {
+      "path": "docs/intake.md",
+      "bytes": 5627,
+      "sha256": "2490ae4bac557bf8040d9e6dc1a91927c78cda884a71e69dee563971c8018415"
+    },
+    {
+      "path": "docs/lessons-from-chat.md",
+      "bytes": 6148,
+      "sha256": "8ba51b29e14412b1034c5475747cd5957bacc40006b056c79a51a5fe20d0d098"
+    },
+    {
+      "path": "docs/production.md",
+      "bytes": 11010,
+      "sha256": "6883d2d51c41fc91daad44c052f775f33a64a37075198f144d5c710dafae7a0f"
+    },
+    {
+      "path": "docs/quality-checks.md",
+      "bytes": 6574,
+      "sha256": "f434a396a77aeff3497e00015acf640da41f6cb13afaa282dd257591f65af7c9"
+    },
+    {
+      "path": "docs/security-and-keys.md",
+      "bytes": 4172,
+      "sha256": "7a0b7e280eca3909d65657c8b7bf08bfc50a25072585ca16cda1edaad4d1cdf6"
+    },
+    {
+      "path": "docs/setup-blender-mcp.md",
+      "bytes": 8202,
+      "sha256": "7595053e48ce6f09df3df02dc112a9382869deecdde32848b96441bb5779f44e"
+    },
+    {
+      "path": "docs/sources-and-skills.md",
+      "bytes": 6703,
+      "sha256": "fb67640ab6021c88b04e34873b82a998639e1d04933030c12a25c4cb6c205329"
+    },
+    {
+      "path": "docs/style-guide.md",
+      "bytes": 8964,
+      "sha256": "2f9001850d53ec4b4dd790f2fbeef1d2909dbc7aee074c2d9baecc95b08b4419"
+    },
+    {
+      "path": "examples/animation-keys/key-001.png",
+      "bytes": 1305591,
+      "sha256": "dfb120c32bea98618c87f070fa86c11931b46593ec295f43189a5d6dde344c53"
+    },
+    {
+      "path": "examples/animation-keys/key-027.png",
+      "bytes": 1308998,
+      "sha256": "bce9dec845766fb25714aa52d13a9457e1140494f51e81d16fac5d76069668ce"
+    },
+    {
+      "path": "examples/animation-keys/key-045.png",
+      "bytes": 1316093,
+      "sha256": "9e768f258d133820b126e33047fc70f841f33141bdfffe6dc14a74b5cf4c69f1"
+    },
+    {
+      "path": "examples/animation-keys/key-078.png",
+      "bytes": 1318813,
+      "sha256": "ee8349d9e8bb0c6ffa7f334144d3b2a5685d5110efcd5732c3f9354f537110f9"
+    },
+    {
+      "path": "examples/animation-keys/key-090.png",
+      "bytes": 1318085,
+      "sha256": "0a933ab1eec4e56a18b48cd3ae684f17b7d29feb135453323bad104d3a12bc34"
+    },
+    {
+      "path": "examples/camera-keys/handle-detail.png",
+      "bytes": 1437972,
+      "sha256": "049e83083338060e5d7ad5e08786bf74ad128adb1576c4bfa321c6a5a24a8365"
+    },
+    {
+      "path": "examples/camera-keys/parcel-closeup.png",
+      "bytes": 1372666,
+      "sha256": "d8e4ea047962f5eb21268280cbd6cbb7f2107d64a12c20dc615574344da84088"
+    },
+    {
+      "path": "examples/camera-keys/two-shot.png",
+      "bytes": 1374232,
+      "sha256": "2d660ae789fc8bdd358c65ffaf01fc9d77902f18c1f5ff543cbc5559933646bf"
+    },
+    {
+      "path": "examples/camera-study-9s.mp4",
+      "bytes": 1927165,
+      "sha256": "ba32754799e8cddd43941abb40d992b04748b2c27a1b5bbd1d3910f19bbb01d0"
+    },
+    {
+      "path": "examples/captions/camera-caption-qa.json",
+      "bytes": 585,
+      "sha256": "4e3ef3285571cf10397db1ecb3cc5e3e3a07918b392ea1e547253c7233c47cd9"
+    },
+    {
+      "path": "examples/captions/caption-qa.json",
+      "bytes": 486,
+      "sha256": "84754a3d26d5a13b1268a9a78beb4038c150f2db214f3c708bfc1397449ff969"
+    },
+    {
+      "path": "examples/captions/phrase-caption.blend",
+      "bytes": 654155,
+      "sha256": "118e85a6f974e51d754ad01c9bb995a3b87c5b69f54ecd8ac25f028eec40dfcd"
+    },
+    {
+      "path": "examples/captions/phrase-caption.png",
+      "bytes": 1217415,
+      "sha256": "42071091e3c702142e4ccb7f211395c9e38944134c46bd9f0d39405cfa23b2ed"
+    },
+    {
+      "path": "examples/captions/word-caption-camera-moved.blend",
+      "bytes": 655041,
+      "sha256": "73a546e912ff9a75cb59ff928495f2615733cadfe05ec1cb05423f3300249a7f"
+    },
+    {
+      "path": "examples/captions/word-caption-camera-moved.png",
+      "bytes": 1238055,
+      "sha256": "b0712ac4ce98d8d4cf4db91b4fb5765d4028ebccca0b7df17974562007ed7f91"
+    },
+    {
+      "path": "examples/captions/word-caption.blend",
+      "bytes": 655264,
+      "sha256": "e62e0c0f522a4e1183ae9179e330be00f54ed9bb8cbd44be001bdbfcac48d288"
+    },
+    {
+      "path": "examples/captions/word-caption.png",
+      "bytes": 1208376,
+      "sha256": "65d1a42c00fa73194d9020b5aba81893a7897b50d12a5148125135b3019c7aea"
+    },
+    {
+      "path": "examples/details/box-grip.png",
+      "bytes": 557036,
+      "sha256": "e3be43081588f3f92695129762463dc220f10d2dba91f26a873d6450925b89a1"
+    },
+    {
+      "path": "examples/details/folder-grip.png",
+      "bytes": 503538,
+      "sha256": "3f42a9a1d611e701ae3c7d5f0954bb7a19794f9a1f95d5dc2d5dec590741e482"
+    },
+    {
+      "path": "examples/details/resting-hand.png",
+      "bytes": 512158,
+      "sha256": "5ff5719837fec1968c479810b08c83ff5708020b3243a0f8a197c79cdbe4bffc"
+    },
+    {
+      "path": "examples/moving-hold-3s.mp4",
+      "bytes": 756073,
+      "sha256": "2628f90fd9521c7cf1f2bf21ac7fb224e8f5026bf13da422ba4782cac44ac312"
+    },
+    {
+      "path": "examples/scenes/01-walking-corridor.blend",
+      "bytes": 442537,
+      "sha256": "276e6bda694941b1dc41d68b25eba373a95713b100f23a899a1884b8a1d7e23f"
+    },
+    {
+      "path": "examples/scenes/02-seated-workspace.blend",
+      "bytes": 186933,
+      "sha256": "9caec6ab90616721d49ee257f0e67a18dec01f31bf49e92e2a66984118f16abb"
+    },
+    {
+      "path": "examples/scenes/03-kneeling-workshop.blend",
+      "bytes": 197555,
+      "sha256": "192d454d0477b3cc8ecb68ca526ea1641ec7c49a16778143bf69e2ea91b43ebd"
+    },
+    {
+      "path": "examples/scenes/04-carrying-parcel.blend",
+      "bytes": 461453,
+      "sha256": "da01836429d131e58149f2a968c219c587b3058f90a372b0c62f9ef9c688cbca"
+    },
+    {
+      "path": "examples/scenes/05-explaining-floorplan.blend",
+      "bytes": 652128,
+      "sha256": "ee4ac37b29be9b388fa5a30d5f515ab2de4049905349580f69ac269601f31a39"
+    },
+    {
+      "path": "examples/scenes/moving-hold.blend",
+      "bytes": 654620,
+      "sha256": "7c7be1dd686c699777c7a6b75248d7daefb05cd58beb3cddd2a30c4c79da7dae"
+    },
+    {
+      "path": "examples/stills/01-walking-corridor.png",
+      "bytes": 1273352,
+      "sha256": "2d5b0ba8f181fe7de4643abcb1325a32043c3bfb8f18a75481fd7f6187d35299"
+    },
+    {
+      "path": "examples/stills/02-seated-workspace.png",
+      "bytes": 1238200,
+      "sha256": "2654cca701343da2fe9116ab3cc20bc8c647b5092e964cf301fc902d05a3e42a"
+    },
+    {
+      "path": "examples/stills/03-kneeling-workshop.png",
+      "bytes": 1398413,
+      "sha256": "1a518a34856558c85d90f0ebfe9d28702973291c0c462a6dd1c93a6f201e98be"
+    },
+    {
+      "path": "examples/stills/04-carrying-parcel.png",
+      "bytes": 1245496,
+      "sha256": "5bd172fce9038a4890528a8c67b674e3b711ffe686b19ac67294205c40e0c6b0"
+    },
+    {
+      "path": "examples/stills/05-explaining-floorplan.png",
+      "bytes": 1201114,
+      "sha256": "ae45a8f898267b9817804c5081348e7d16a9afaa8dff553aaf539c4dcbf006e7"
+    },
+    {
+      "path": "guide/cartoon-workflow-guide.pdf",
+      "bytes": 6495462,
+      "sha256": "cf2edf2947d3695ea7da199129e8539dab128edf9a5e493428013a03d2f12262"
+    },
+    {
+      "path": "prompts/START-HERE.txt",
+      "bytes": 6011,
+      "sha256": "97d3948e1b9e568914bdfc873dbaf2eba87d3027b6e489f24cf452bb70eccec3"
+    },
+    {
+      "path": "prompts/revision.txt",
+      "bytes": 2289,
+      "sha256": "6943cd7f162d09237901298558cb5951774f1e5d3fc157a133c3f801255e6b4f"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/LICENSE.upstream.txt",
+      "bytes": 1064,
+      "sha256": "d81d0037e3a29a01ccfefaae420d5ba73e905cabf3995700e9075c7205c06cc5"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/ORIGIN.txt",
+      "bytes": 146,
+      "sha256": "93ae74bb6d6fc5b3ece906269645565e6689015b92fa9c3518c37cc90cfa452f"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/SKILL.md",
+      "bytes": 7095,
+      "sha256": "74bfbbf2eb941691f477f14ce3cbb959feaa311e8b5e743bc8c274277dc77a98"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/scripts/_bpyx.py",
+      "bytes": 4503,
+      "sha256": "a3339ba8a678469e8ed29510e32a7331e0235202191ca4edb977af4720819b4b"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/scripts/bake_action.py",
+      "bytes": 6923,
+      "sha256": "ff0e602c9f432872ebe4f34f368d92e36988abf4159c525981708caa962f349c"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/scripts/loop_check.py",
+      "bytes": 5076,
+      "sha256": "bee02200dfe7aefa984baecad7607f9f17ad2ea5d76dd1b798ddda2cf1924bd4"
+    },
+    {
+      "path": "references/upstream-skills/blender-animation/scripts/retarget.py",
+      "bytes": 9616,
+      "sha256": "37f90283ebd72212af135ec25d866ad92f2537425472ec943a216eca1926bafa"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/LICENSE.upstream.txt",
+      "bytes": 1064,
+      "sha256": "d81d0037e3a29a01ccfefaae420d5ba73e905cabf3995700e9075c7205c06cc5"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/ORIGIN.txt",
+      "bytes": 146,
+      "sha256": "93ae74bb6d6fc5b3ece906269645565e6689015b92fa9c3518c37cc90cfa452f"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/SKILL.md",
+      "bytes": 5185,
+      "sha256": "968e4435eeba040f0952cc335c8e9e7182e1d7008aa4295f202ddb836fa49ec9"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/scripts/_bpyx.py",
+      "bytes": 4503,
+      "sha256": "a3339ba8a678469e8ed29510e32a7331e0235202191ca4edb977af4720819b4b"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/scripts/qa_check.py",
+      "bytes": 19502,
+      "sha256": "377cd0ba34b7319d4b20a5b04eeda1eb0b3dc0bdf530fc3767d7accd4fbb5454"
+    },
+    {
+      "path": "references/upstream-skills/blender-asset-qa/scripts/review_shots.py",
+      "bytes": 6292,
+      "sha256": "ffd4361f313592b67c124cdf0ec54b8d9866c9b29eefdac5c47731ce133d3f01"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/LICENSE.upstream.txt",
+      "bytes": 1064,
+      "sha256": "d81d0037e3a29a01ccfefaae420d5ba73e905cabf3995700e9075c7205c06cc5"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/ORIGIN.txt",
+      "bytes": 146,
+      "sha256": "93ae74bb6d6fc5b3ece906269645565e6689015b92fa9c3518c37cc90cfa452f"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/SKILL.md",
+      "bytes": 7635,
+      "sha256": "91588e225931c2df924819d02a7b9ca896568f0e4d458a09364b1611b709527f"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/references/api-changes-5x.md",
+      "bytes": 6666,
+      "sha256": "adc6abbff9aa0d57158805aaabf63cff3088779eb0a957253dfea1247f08bcaa"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/references/bpy-patterns.md",
+      "bytes": 7793,
+      "sha256": "ba7bbc708bf198bdcdfa59d9d41d830a4ae119c24ae9457830b73d9e818e2af8"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/scripts/_bpyx.py",
+      "bytes": 4503,
+      "sha256": "a3339ba8a678469e8ed29510e32a7331e0235202191ca4edb977af4720819b4b"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/scripts/env_report.py",
+      "bytes": 2015,
+      "sha256": "e628feed806dd265e0c1ce803d92591aac208a9f463d8c47cbb939476d3b347a"
+    },
+    {
+      "path": "references/upstream-skills/blender-core/scripts/run_in_blender.py",
+      "bytes": 3292,
+      "sha256": "e97e078c1b52475d386af2b8f9d27c7578a55c250ccd43ff50bed9c33d380355"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/LICENSE.upstream.txt",
+      "bytes": 1069,
+      "sha256": "160406e2c9609f51e7a742e1908560ad54e39ee124ffa26bae46da7c78bc7b4c"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/ORIGIN.txt",
+      "bytes": 157,
+      "sha256": "fdd668926c1f66b94f5ba988919372f795b1c380fffce89f633829c87c5c5295"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/SKILL.md",
+      "bytes": 8044,
+      "sha256": "c309a8cb586f50eb502cad782f6821709230ccf2148e99837501073a4440a9fd"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/references/autonomous_build_brief.md",
+      "bytes": 4091,
+      "sha256": "2f7be942e7467ad8626a3a83ae40f7d19bccac991d3d3ceff84ab92dece3a980"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/references/concept_prompt_template.md",
+      "bytes": 2597,
+      "sha256": "c8a22e0c221c8a2c8d6d0e86a9d945f189abaa1ddac6f8b77459dcfa85d60e94"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/references/macos_packaging_pitfalls.md",
+      "bytes": 2704,
+      "sha256": "f01a6d1ef02d62ef190e76b1714ce8d8660bc11e67b3d2c26c6eef219daa1b5f"
+    },
+    {
+      "path": "references/upstream-skills/concept-target-visual-gate/references/visual_review_ledger.md",
+      "bytes": 2591,
+      "sha256": "28e7e5ad1e937dcd6b989903b9b47664a78321d57b1e96c3eaa930aafe170757"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/LICENSE.upstream.txt",
+      "bytes": 1070,
+      "sha256": "26f54ae8c2f3d1fb0e3f810a599e6fb51852d1f176b97578961826be3bb98cef"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/ORIGIN.txt",
+      "bytes": 144,
+      "sha256": "1457fffd41495a37655e398a242ba71a7080ccc23e13e2e1a50d7d3834775642"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/SKILL.md",
+      "bytes": 18278,
+      "sha256": "049f0ecd4bbbdc3e6ee09beac9ce5f262d6970f6932221e20e0420bf492bd5f2"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/references/blender-5.2-deltas.md",
+      "bytes": 119846,
+      "sha256": "a62d17344b968501b46f333ddc9badb8ebdb6c8a23cc1be32c07aff0d85d909d"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/references/bpy-reliability.md",
+      "bytes": 25232,
+      "sha256": "d5b138c58fc66fe6bb1709cfd1748d5ceb959bd8e7b34460e4ca9a622af698f9"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/scripts/bx_audit.py",
+      "bytes": 30220,
+      "sha256": "a2c99225730b1b44eade7033ae600f17c29c94ce9992a6cf7030d2dfcbaebf6b"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/scripts/bx_gui.py",
+      "bytes": 8951,
+      "sha256": "d5c020f27d2714f7f773da30cfa190017be453a621bb45f1eccececa3a33d60c"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-expert/scripts/bx_review.py",
+      "bytes": 15644,
+      "sha256": "5b274739b2a8ed26b3fe144e0d6ed15e51aee8e52b2852b51d5f6f464e939106"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/LICENSE.upstream.txt",
+      "bytes": 1070,
+      "sha256": "26f54ae8c2f3d1fb0e3f810a599e6fb51852d1f176b97578961826be3bb98cef"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/ORIGIN.txt",
+      "bytes": 144,
+      "sha256": "1457fffd41495a37655e398a242ba71a7080ccc23e13e2e1a50d7d3834775642"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/SKILL.md",
+      "bytes": 18266,
+      "sha256": "507f60992492c9d63b498494aaeab2f0a76ca35d92e31c18e1ce29470d36169d"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/references/critique.md",
+      "bytes": 12017,
+      "sha256": "af87d2c4a18f46825d47482dcba305d4ed7795f2a1b25102e017c90d1e7efb41"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/references/expert-notes.md",
+      "bytes": 17307,
+      "sha256": "75433ac5bd2bc36719bff588d21d30fa34c72308ac05f9d729d2c25973b1b46c"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/references/procedures.md",
+      "bytes": 19644,
+      "sha256": "8aa7faaf29c1cd1df0c6f121a2cbaa7d46eec99693fabaa37544eda7b62f8e96"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/references/sources.md",
+      "bytes": 6255,
+      "sha256": "6c7e84a7912375a7df4996ede3e95bcfa4ac797636270420b9034f4c89f572a4"
+    },
+    {
+      "path": "references/upstream-skills/scenario-blender-grease-pencil/scripts/bx_gp.py",
+      "bytes": 47192,
+      "sha256": "60333346c7ab8c894870d00e6fac692496f9a76ff89595b585a41a22a055e07c"
+    },
+    {
+      "path": "references/upstream-skills/sources.json",
+      "bytes": 1807,
+      "sha256": "f7c682ca9ca64dd0d27a95144f37aeb247010c3bb9bebf639caac2b6ca29de9e"
+    },
+    {
+      "path": "references/user-supplied/field-manual.pdf",
+      "bytes": 1828800,
+      "sha256": "ba921765ec1ad79bcef5b9d34f42bfd0d2f94aab9fa2b1dabca22ce50d0c176c"
+    },
+    {
+      "path": "references/user-supplied/historical-studio-setup.txt",
+      "bytes": 5530,
+      "sha256": "71d5aa0c670151e7b03970fa467611db6c2c4119abcbf94e1b9351c9f4ce1897"
+    },
+    {
+      "path": "references/user-supplied/historical-video-prompt.txt",
+      "bytes": 19570,
+      "sha256": "6f2dd0f1d7b0af24d9ecfe07670268d13a0bfe325bde53abaca3bc782175a955"
+    },
+    {
+      "path": "references/user-supplied/montage-examples.pdf",
+      "bytes": 5015091,
+      "sha256": "a88a31e3b46ff2d1b88385a900db9ad049588be6049b63defb0f7053a6a23f4c"
+    },
+    {
+      "path": "references/user-supplied/story-ideas.md",
+      "bytes": 3846,
+      "sha256": "b8880d5ea24f5ff87175870dfa31f6c10aa5ae291aa14293cc2c90a59b1819eb"
+    },
+    {
+      "path": "requirements-audio.txt",
+      "bytes": 144,
+      "sha256": "0a25edb60a4c53236b70ac85a64df96d8dfaec22ca210521babb79be3b143bc8"
+    },
+    {
+      "path": "requirements-docs.txt",
+      "bytes": 33,
+      "sha256": "b36d4375a0a4f563a3c5e0d65abd08e830846a0442840cbc90e63d17c00be00d"
+    },
+    {
+      "path": "requirements-render.txt",
+      "bytes": 255,
+      "sha256": "e50c2dcb01a1743a6eaa22628868df91d8554848959d5058100c099282ba21f2"
+    },
+    {
+      "path": "scripts/build_manual.py",
+      "bytes": 26431,
+      "sha256": "fa23ecc34b33aa1ff8691f2283f14e309aa590b291b87789ceb599dd6bf764a5"
+    },
+    {
+      "path": "scripts/doctor.py",
+      "bytes": 5577,
+      "sha256": "3890f1a58019a7be092e4eb6bc78abb3c69915cdce0ffa5997b3716e7dec1db6"
+    },
+    {
+      "path": "scripts/elevenlabs_voice.py",
+      "bytes": 7087,
+      "sha256": "b7701f1b9286feb551479dbdf10a845fcc75ab83354f652d97be33abe671635e"
+    },
+    {
+      "path": "scripts/install_skills.py",
+      "bytes": 1108,
+      "sha256": "51ef1d40ad61cdcc0f959bf782a8f94fc0a4352c2dec9987dff6413b3eb7f7e0"
+    },
+    {
+      "path": "scripts/render_example.py",
+      "bytes": 5153,
+      "sha256": "5008ddd09502a5db4d7cec862d181f10f3d26095388166514a57d01f03a291c3"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 928,
+      "sha256": "2b4a88e6f0db1efdc9a16402e41f3ae6e58168742438cf7674394e04023c0612"
+    },
+    {
+      "path": "skills/cartoon-blender-production/SKILL.md",
+      "bytes": 11271,
+      "sha256": "671534d1696531c8fcd680b97134417841ca02d5e42bd98a0ff54b9cf14f8470"
+    },
+    {
+      "path": "skills/cartoon-blender-production/agents/openai.yaml",
+      "bytes": 354,
+      "sha256": "522f0113795000825305997557d276a50c6c6866188c04bd5ac15990b7ec9185"
+    },
+    {
+      "path": "skills/cartoon-blender-production/references/intake.md",
+      "bytes": 2153,
+      "sha256": "b7ed43a9e19f5c2dbae855978602c5e587a555324d390a98f4baffaddca455e4"
+    },
+    {
+      "path": "skills/cartoon-blender-production/references/motion-and-sound.md",
+      "bytes": 3539,
+      "sha256": "cb1f4d59678f5be6e0a4b7d68957b569d3fcf875d39b7b17820b2793d8368c2b"
+    },
+    {
+      "path": "skills/cartoon-blender-production/references/quality-gates.md",
+      "bytes": 1978,
+      "sha256": "275765eae9337cf207e2680cc822bfcee1220b6a722da4424f51077db7d2cf05"
+    },
+    {
+      "path": "skills/cartoon-blender-production/references/visual-rules.md",
+      "bytes": 4103,
+      "sha256": "96d5cd8ad18aebea3aea707b09fd32e9868ad6825cdf3764e86637b126733317"
+    },
+    {
+      "path": "skills/cartoon-visual-qa/SKILL.md",
+      "bytes": 5343,
+      "sha256": "50cdc71726f8b4ff02f8e8b562e15d6989c1f387e7bdd95d50e0f1c95def5de9"
+    },
+    {
+      "path": "skills/cartoon-visual-qa/agents/openai.yaml",
+      "bytes": 355,
+      "sha256": "dfa89cb52dc18a3f073cbfc9a06ecd2ea3039dc2f0578649fb90e94b64140506"
+    },
+    {
+      "path": "studio/VALIDATION.json",
+      "bytes": 1643,
+      "sha256": "02d2193396e8ba2bcfe960c15bbf3b5d9d0a0e58b6fe2d44bfb16b32d33fc123"
+    },
+    {
+      "path": "studio/blender_flat.py",
+      "bytes": 16372,
+      "sha256": "18748bcc99f2dbf3e34be612106b2e8c7c92ab341e80e124aef701dc871bffe1"
+    },
+    {
+      "path": "studio/build_animation.py",
+      "bytes": 6508,
+      "sha256": "7fb901be9c3cea137033a396a3068a50f13dbf9c673be9efd24826bc52bddcab"
+    },
+    {
+      "path": "studio/build_studies.py",
+      "bytes": 4047,
+      "sha256": "45e8ba146d9465b86afbb44590b7c2664dca4787b5d2fb33684551e355b057d8"
+    },
+    {
+      "path": "studio/camera_studies.py",
+      "bytes": 6245,
+      "sha256": "49e9e704f9fa03ae391459dd9579affbd0804f21e8118b29b93d2b4a31c36bba"
+    },
+    {
+      "path": "studio/captions.py",
+      "bytes": 9130,
+      "sha256": "12cbbaf51fd87df45043e31a1df5ba1353c140dec6f67fb97b085fee87c66a94"
+    },
+    {
+      "path": "studio/draw_hands.py",
+      "bytes": 2502,
+      "sha256": "6aed090627ff30cfa576b834edfd23aeada2680fa9f4f4ff4f38bd5a14882aa6"
+    },
+    {
+      "path": "studio/draw_mitten_hands.py",
+      "bytes": 5271,
+      "sha256": "caacf08cd5f5fe7a36d4e42a9707184e69cbbcaf7438d72647de93bd29e3918b"
+    },
+    {
+      "path": "studio/draw_people.py",
+      "bytes": 22927,
+      "sha256": "6fad89df0cbd57b598270f6e2245a02c474a7590e37b33a021762060260f963e"
+    },
+    {
+      "path": "studio/draw_rooms.py",
+      "bytes": 17837,
+      "sha256": "3d300f4386d80f9db271262aaed69428098891f154f518ff5ff053fbfa92f65a"
+    },
+    {
+      "path": "studio/support.py",
+      "bytes": 1106,
+      "sha256": "eac06893a9601c9e1b6acce9b8e6e53fe523ffe80cc072cc0f0ce91f4ea1bacb"
+    },
+    {
+      "path": "templates/brief.json",
+      "bytes": 2037,
+      "sha256": "871894d09c711108e4b924d67e573bc7fc238909cbcb60cbd07bc1b92bbecbfb"
+    },
+    {
+      "path": "templates/caption-fixture.alignment.json",
+      "bytes": 348,
+      "sha256": "2096e8d385a920c492db2e676d19b9109a83b65046dcb8fb9f546c4edca15eeb"
+    },
+    {
+      "path": "templates/script.example.md",
+      "bytes": 5748,
+      "sha256": "aa6dfc25e5aa5cf6ddaba609d2f8fe483703e06b072b6d6116fef111126cc6e9"
+    },
+    {
+      "path": "templates/shotlist.json",
+      "bytes": 7785,
+      "sha256": "2a37e11c7950c3eeba8416cd64f1664567c7b748019d26848b6bae6990cd1015"
+    },
+    {
+      "path": "templates/voice-sample.txt",
+      "bytes": 322,
+      "sha256": "dd67d4104aef92e226208f5db6cf3359c112e54b508c77b8e7d49d63e3fbba3d"
+    }
+  ]
+}

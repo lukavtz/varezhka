@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  gate:
+    name: Release gate (full CI)
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    name: Package verified ZIP
+    needs: gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Final integrity check
+        run: python scripts/verify_package.py
+      - name: Build ZIP
+        run: |
+          cd ..
+          zip -qr varezhka-${{ github.ref_name }}.zip varezhka \
+            -x 'varezhka/output/*' 'varezhka/.git/*' 'varezhka/**/__pycache__/*'
+      - name: Verify ZIP contents against manifest
+        run: |
+          cd ..
+          unzip -l varezhka-${{ github.ref_name }}.zip | awk '{print $4}' | grep -v '^$' > /tmp/zip-list.txt
+          python - <<'EOF'
+          import json, sys
+          from pathlib import Path
+          manifest = json.loads(Path('varezhka/PACKAGE-MANIFEST.json').read_text())['files']
+          listed = {l.strip() for l in open('/tmp/zip-list.txt') if l.strip().startswith('varezhka/')}
+          expected = {'varezhka/' + f['path'] for f in manifest}
+          missing = expected - listed
+          if missing:
+              print('missing in ZIP:', sorted(missing)[:20]); sys.exit(1)
+          print(f'ZIP contains all {len(expected)} manifest files')
+          EOF
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ../varezhka-${{ github.ref_name }}.zip
+          generate_release_notes: true

@@ -1,0 +1,44 @@
+[
+  {
+    "skill": "scenario-blender-expert",
+    "source": "https://github.com/scenario-labs/skills",
+    "license_url": "https://raw.githubusercontent.com/scenario-labs/skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/scenario-blender-expert"
+  },
+  {
+    "skill": "scenario-blender-grease-pencil",
+    "source": "https://github.com/scenario-labs/skills",
+    "license_url": "https://raw.githubusercontent.com/scenario-labs/skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/scenario-blender-grease-pencil"
+  },
+  {
+    "skill": "blender-core",
+    "source": "https://github.com/EL4CTEO/blender-skills",
+    "license_url": "https://raw.githubusercontent.com/EL4CTEO/blender-skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/blender-core"
+  },
+  {
+    "skill": "blender-animation",
+    "source": "https://github.com/EL4CTEO/blender-skills",
+    "license_url": "https://raw.githubusercontent.com/EL4CTEO/blender-skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/blender-animation"
+  },
+  {
+    "skill": "blender-asset-qa",
+    "source": "https://github.com/EL4CTEO/blender-skills",
+    "license_url": "https://raw.githubusercontent.com/EL4CTEO/blender-skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/blender-asset-qa"
+  },
+  {
+    "skill": "concept-target-visual-gate",
+    "source": "https://github.com/oh-ashen-one/blender-agent-skills",
+    "license_url": "https://raw.githubusercontent.com/oh-ashen-one/blender-agent-skills/main/LICENSE",
+    "license": "MIT",
+    "packaged_path": "references/upstream-skills/concept-target-visual-gate"
+  }
+]

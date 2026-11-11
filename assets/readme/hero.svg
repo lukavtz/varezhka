@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" role="img" aria-label="varezhka — production-ready Blender cartoon pipeline for AI agents: from brief to verified MP4">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C3238"/>
+      <stop offset="1" stop-color="#23282D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="18" fill="url(#bg)"/>
+  <!-- keyframe timeline motif -->
+  <line x1="64" y1="560" x2="1136" y2="560" stroke="#3A4048" stroke-width="2"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="19" fill="#8B95A1">
+    <circle cx="200" cy="560" r="7" fill="#E8B04B"/><text x="200" y="596" text-anchor="middle">BRIEF</text>
+    <circle cx="440" cy="560" r="7" fill="#5E8E85"/><text x="440" y="596" text-anchor="middle">DRAW</text>
+    <circle cx="680" cy="560" r="7" fill="#E8B04B"/><text x="680" y="596" text-anchor="middle">ANIMATE</text>
+    <circle cx="920" cy="560" r="7" fill="#5E8E85"/><text x="920" y="596" text-anchor="middle">VERIFY</text>
+  </g>
+  <!-- left column: identity -->
+  <text x="64" y="118" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="22" letter-spacing="6" fill="#E8B04B">BLNDER · AI AGENT · PRODUCTION KIT</text>
+  <text x="62" y="222" font-family="-apple-system,'Segoe UI',system-ui,sans-serif" font-size="104" font-weight="800" fill="#F4F0E6">varezhka</text>
+  <rect x="64" y="252" width="64" height="6" rx="3" fill="#E8B04B"/>
+  <text x="64" y="310" font-family="-apple-system,'Segoe UI',system-ui,sans-serif" font-size="28" fill="#C9D1D9">От брифа до проверенного MP4 — силами ИИ-агента.</text>
+  <text x="64" y="348" font-family="-apple-system,'Segoe UI',system-ui,sans-serif" font-size="28" fill="#C9D1D9">Персонажи, камеры, субтитры и звук — нативным кодом Blender.</text>
+  <!-- right column: character -->
+  <image href="hero-character.png" x="810" y="56" height="484" preserveAspectRatio="xMidYMax meet"/>
+  <!-- spec chips -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#C9D1D9">
+    <rect x="64" y="392" width="120" height="34" rx="17" fill="#31373E" stroke="#3E454D"/>
+    <text x="124" y="414" text-anchor="middle">Python</text>
+    <rect x="196" y="392" width="130" height="34" rx="17" fill="#31373E" stroke="#3E454D"/>
+    <text x="261" y="414" text-anchor="middle">Blender 5.x</text>
+    <rect x="338" y="392" width="96" height="34" rx="17" fill="#31373E" stroke="#3E454D"/>
+    <text x="386" y="414" text-anchor="middle">MIT</text>
+    <rect x="446" y="392" width="150" height="34" rx="17" fill="#31373E" stroke="#3E454D"/>
+    <text x="521" y="414" text-anchor="middle">headless CLI</text>
+  </g>
+  <text x="64" y="470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" fill="#8B95A1">$ python scripts/doctor.py</text>
+</svg>

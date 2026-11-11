@@ -1,0 +1,3 @@
+Source: https://github.com/oh-ashen-one/blender-agent-skills
+License: MIT (see LICENSE.upstream.txt)
+Copied local snapshot; no global skill installation.

@@ -1,0 +1,144 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify package integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Manifest SHA-256 check
+        run: python scripts/verify_package.py
+      - name: Manifest covers the whole tree
+        run: |
+          python - <<'EOF'
+          import json, hashlib, sys
+          from pathlib import Path
+          root = Path('.')
+          manifest = {f['path'] for f in json.loads((root/'PACKAGE-MANIFEST.json').read_text())['files']}
+          skip = {'output', '__pycache__', '.git'}
+          missing = []
+          for p in sorted(root.rglob('*')):
+              if p.is_dir() or any(part in skip for part in p.parts): continue
+              rel = p.relative_to(root).as_posix()
+              if rel == 'PACKAGE-MANIFEST.json': continue
+              if rel not in manifest:
+                  missing.append(rel)
+          extra = sorted(manifest - {x.relative_to(root).as_posix() for x in root.rglob('*') if x.is_file()})
+          if missing or extra:
+              print('missing from manifest:', missing)
+              print('stale in manifest:', extra)
+              sys.exit(1)
+          print(f'manifest covers {len(manifest)} files, tree matches')
+          EOF
+
+  lint:
+    name: Lint studio code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: ruff
+        run: |
+          pip install ruff
+          ruff check scripts/ studio/ --select E9,F63,F7,F82 --isolated
+      - name: compileall (syntax gate)
+        run: python -m compileall -q scripts/*.py
+
+  render:
+    name: Real Blender render tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Blender 4.5 LTS
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends libxkbcommon0 libgl1 libxi6 libXxf86vm1 libXfixes3 libXdamage1 libXrender1 libasound2t64 || true
+          wget -q https://download.blender.org/release/Blender4.5/blender-4.5.3-linux-x64.tar.xz -O /tmp/blender.tar.xz
+          sudo mkdir -p /opt/blender && sudo tar -xf /tmp/blender.tar.xz -C /opt/blender --strip-components=1
+          /opt/blender/blender --version | head -1
+          echo "BLENDER_PATH=/opt/blender/blender" >> "$GITHUB_ENV"
+      - name: Doctor
+        run: python scripts/doctor.py --blender /opt/blender/blender || true
+      - name: Render five stills (50%)
+        run: >
+          python scripts/render_example.py --mode stills --output output/stills
+          --percent 50
+      - name: Render camera study (50%, preview frames)
+        run: >
+          python scripts/render_example.py --mode camera --output output/camera
+          --percent 50 --only 1
+      - name: Render moving-hold animation (50%, preview)
+        run: >
+          python scripts/render_example.py --mode animation --output output/anim
+          --percent 50 --preview-only
+      - name: Check rendered outputs exist and are non-empty
+        run: |
+          set -e
+          for f in output/stills/renders/*.png output/camera/camera/*.png output/anim/animation/key-*.png; do
+            test -s "$f" || { echo "MISSING OR EMPTY: $f"; exit 1; }
+          done
+          python - <<'EOF'
+          from pathlib import Path
+          import json
+          qa = Path('output/anim/animation/animation-qa.json')
+          assert qa.is_file(), 'animation-qa.json missing'
+          report = json.loads(qa.read_text())
+          err = report['maximum_actual_foot_error']
+          assert err <= 1e-5, f'foot drift invariant violated: {err}'
+          print(f'foot drift invariant OK: {err}')
+          assert report['frames'] == 90 and report['fps'] == 30
+          print('animation report OK: 90 frames @ 30fps')
+          EOF
+      - name: Upload rendered proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-proof
+          path: |
+            output/stills/renders/
+            output/camera/camera/
+            output/anim/animation/*.png
+            output/anim/animation/animation-qa.json
+          retention-days: 7
+
+  encode:
+    name: MP4 encode check
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Blender 4.5 LTS
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends libxkbcommon0 libgl1 libxi6 libXxf86vm1 libXfixes3 libXdamage1 libXrender1 libasound2t64 || true
+          wget -q https://download.blender.org/release/Blender4.5/blender-4.5.3-linux-x64.tar.xz -O /tmp/blender.tar.xz
+          sudo mkdir -p /opt/blender && sudo tar -xf /tmp/blender.tar.xz -C /opt/blender --strip-components=1
+      - name: Render + encode camera study MP4 (50%)
+        run: >
+          python scripts/render_example.py --mode camera --output output/cam
+          --percent 50 --encode
+      - name: Verify MP4 with ffprobe
+        run: |
+          test -s output/cam/camera-study.mp4 || { echo 'MP4 missing'; exit 1; }
+          ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames \
+            -of default=noprint_wrappers=1 output/cam/camera-study.mp4

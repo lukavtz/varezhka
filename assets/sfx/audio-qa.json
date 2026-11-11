@@ -1,0 +1,26 @@
+[
+  {
+    "file": "01-elevator.wav",
+    "seconds": 7.5,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak_dbfs": -8.05,
+    "clipped_samples": 0
+  },
+  {
+    "file": "02-power-out.wav",
+    "seconds": 7.5,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak_dbfs": -7.29,
+    "clipped_samples": 0
+  },
+  {
+    "file": "03-tension.wav",
+    "seconds": 7.5,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak_dbfs": -12.91,
+    "clipped_samples": 0
+  }
+]
