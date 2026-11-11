@@ -83,7 +83,8 @@ def animate(scene, start, end):
         scene.camera.data.keyframe_insert('ortho_scale', frame=frame)
     for owner in (scene.camera, scene.camera.data):
         data=owner.animation_data
-        bag=F.ensure_channelbag(data.action, data.action_slot)
+        from support import ensure_channelbag
+        bag=ensure_channelbag(data.action, data.action_slot)
         for curve in bag.fcurves:
             for key in curve.keyframe_points:
                 key.interpolation='BEZIER'

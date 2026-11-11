@@ -11,7 +11,7 @@ from pathlib import Path
 
 import bpy
 import blender_flat as F
-from support import resolve_font
+from support import resolve_font, ensure_channelbag
 
 
 def load_words(value):
@@ -51,7 +51,7 @@ def _visibility(obj,start,end):
         obj.keyframe_insert('hide_render',frame=frame)
         obj.keyframe_insert('hide_viewport',frame=frame)
     data=obj.animation_data
-    bag=F.ensure_channelbag(data.action,data.action_slot)
+    bag=ensure_channelbag(data.action,data.action_slot)
     for curve in bag.fcurves:
         for key in curve.keyframe_points:key.interpolation='CONSTANT'
 

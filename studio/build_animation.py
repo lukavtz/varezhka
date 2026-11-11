@@ -15,7 +15,7 @@ sys.path.insert(0,str(P))
 import blender_flat as F
 import draw_rooms as rooms
 import draw_people as people
-from support import validate_percent
+from support import validate_percent, ensure_channelbag
 
 
 def pivot(name,parent,local_xy,children):
@@ -105,7 +105,7 @@ def main():
     for owner in owners:
         data=owner.animation_data
         if not data or not data.action:continue
-        bag=F.ensure_channelbag(data.action,data.action_slot)
+        bag=ensure_channelbag(data.action,data.action_slot)
         for curve in bag.fcurves:
             for key in curve.keyframe_points:key.interpolation='LINEAR'
     maximum_foot_error=0.0

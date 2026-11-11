@@ -754,7 +754,7 @@
     {
       "path": "studio/build_animation.py",
       "bytes": 6508,
-      "sha256": "b02e3617652da40b48bdeed60e5fff3beb04f4e6d6b5de91d719331b42e5955b"
+      "sha256": "a8459dc547bf8fb512fe64257a80c160f72c160a24a45a40e974ef8c50ea271c"
     },
     {
       "path": "studio/build_studies.py",
@@ -764,12 +764,12 @@
     {
       "path": "studio/camera_studies.py",
       "bytes": 6245,
-      "sha256": "14e1e19a8cc0125e2d9b41f2519951c16531716ff0613f4383e141dd9047358e"
+      "sha256": "de638dda8b401f73e465f034702755b03d60ea32858b0db2e4a36e04b94a7bbf"
     },
     {
       "path": "studio/captions.py",
       "bytes": 9130,
-      "sha256": "a8983e0b6911ab1b28fae5c4930533d424df2e6efabcd44a800da2f91cdedab1"
+      "sha256": "78406d6c9da23c2db8e3fc5e3c95e120a84e8fb74666a42b9bf8c37d8295c0d3"
     },
     {
       "path": "studio/draw_hands.py",
