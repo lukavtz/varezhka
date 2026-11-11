@@ -94,7 +94,7 @@ jobs:
       - name: Check rendered outputs exist and are non-empty
         run: |
           set -e
-          for f in output/stills/renders/*.png output/camera/camera/*.png output/anim/animation/key-*.png; do
+          for f in output/stills/renders/*.png output/camera/camera/shot-*-frames/frame-*.png output/anim/animation/key-*.png; do
             test -s "$f" || { echo "MISSING OR EMPTY: $f"; exit 1; }
           done
           python - <<'EOF'
