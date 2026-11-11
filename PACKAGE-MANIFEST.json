@@ -11,7 +11,7 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "a2e906cf0851d9aa8bdb8b4c41fbf4dd8af09a6d9bfb2d57195baf0f2eeea2be"
+      "sha256": "b08968a777f31b86721da9b42c899d29fb44479823b6d0b8b7bd79946bbaec18"
     },
     {
       "path": ".github/workflows/release.yml",
@@ -754,7 +754,7 @@
     {
       "path": "studio/build_animation.py",
       "bytes": 6508,
-      "sha256": "7fb901be9c3cea137033a396a3068a50f13dbf9c673be9efd24826bc52bddcab"
+      "sha256": "b02e3617652da40b48bdeed60e5fff3beb04f4e6d6b5de91d719331b42e5955b"
     },
     {
       "path": "studio/build_studies.py",
@@ -764,12 +764,12 @@
     {
       "path": "studio/camera_studies.py",
       "bytes": 6245,
-      "sha256": "49e9e704f9fa03ae391459dd9579affbd0804f21e8118b29b93d2b4a31c36bba"
+      "sha256": "9c9969383631fa08709f67714fa0234d95964e5d6fd1cfcabee1fb94a095ab98"
     },
     {
       "path": "studio/captions.py",
       "bytes": 9130,
-      "sha256": "12cbbaf51fd87df45043e31a1df5ba1353c140dec6f67fb97b085fee87c66a94"
+      "sha256": "a8983e0b6911ab1b28fae5c4930533d424df2e6efabcd44a800da2f91cdedab1"
     },
     {
       "path": "studio/draw_hands.py",
@@ -794,7 +794,7 @@
     {
       "path": "studio/support.py",
       "bytes": 1106,
-      "sha256": "eac06893a9601c9e1b6acce9b8e6e53fe523ffe80cc072cc0f0ce91f4ea1bacb"
+      "sha256": "fabb2f1d13f68d24c3ea9e4b72d1e34af5a3080a9bad3bb7887afd29d17ea93a"
     },
     {
       "path": "templates/brief.json",

@@ -9,7 +9,6 @@ import math
 import sys
 from pathlib import Path
 import bpy
-from bpy_extras.anim_utils import action_ensure_channelbag_for_slot
 
 P=Path(__file__).resolve().parent
 sys.path.insert(0,str(P))
@@ -106,7 +105,7 @@ def main():
     for owner in owners:
         data=owner.animation_data
         if not data or not data.action:continue
-        bag=action_ensure_channelbag_for_slot(data.action,data.action_slot)
+        bag=F.ensure_channelbag(data.action,data.action_slot)
         for curve in bag.fcurves:
             for key in curve.keyframe_points:key.interpolation='LINEAR'
     maximum_foot_error=0.0

@@ -10,7 +10,6 @@ import math
 from pathlib import Path
 
 import bpy
-from bpy_extras.anim_utils import action_ensure_channelbag_for_slot
 import blender_flat as F
 from support import resolve_font
 
@@ -52,7 +51,7 @@ def _visibility(obj,start,end):
         obj.keyframe_insert('hide_render',frame=frame)
         obj.keyframe_insert('hide_viewport',frame=frame)
     data=obj.animation_data
-    bag=action_ensure_channelbag_for_slot(data.action,data.action_slot)
+    bag=F.ensure_channelbag(data.action,data.action_slot)
     for curve in bag.fcurves:
         for key in curve.keyframe_points:key.interpolation='CONSTANT'
 
