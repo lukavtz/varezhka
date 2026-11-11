@@ -70,11 +70,13 @@ jobs:
           python-version: '3.12'
       - name: Install Blender 4.5 LTS
         run: |
-          sudo apt-get update && sudo apt-get install -y --no-install-recommends libxkbcommon0 libgl1 libxi6 libXxf86vm1 libXfixes3 libXdamage1 libXrender1 libasound2t64 || true
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+            libegl1 libgl1 libxi6 libxkbcommon0 libxrender1 libxdamage1 libxxf86vm1 libxfixes3 libasound2t64 || true
           wget -q https://download.blender.org/release/Blender4.5/blender-4.5.3-linux-x64.tar.xz -O /tmp/blender.tar.xz
           sudo mkdir -p /opt/blender && sudo tar -xf /tmp/blender.tar.xz -C /opt/blender --strip-components=1
-          /opt/blender/blender --version | head -1
           echo "BLENDER_PATH=/opt/blender/blender" >> "$GITHUB_ENV"
+      - name: Blender smoke test
+        run: /opt/blender/blender --background --factory-startup --python-expr "import bpy; print('bpy OK', bpy.app.version_string)"
       - name: Doctor
         run: python scripts/doctor.py --blender /opt/blender/blender || true
       - name: Render five stills (50%)
@@ -130,9 +132,13 @@ jobs:
           python-version: '3.12'
       - name: Install Blender 4.5 LTS
         run: |
-          sudo apt-get update && sudo apt-get install -y --no-install-recommends libxkbcommon0 libgl1 libxi6 libXxf86vm1 libXfixes3 libXdamage1 libXrender1 libasound2t64 || true
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+            libegl1 libgl1 libxi6 libxkbcommon0 libxrender1 libxdamage1 libxxf86vm1 libxfixes3 libasound2t64 || true
           wget -q https://download.blender.org/release/Blender4.5/blender-4.5.3-linux-x64.tar.xz -O /tmp/blender.tar.xz
           sudo mkdir -p /opt/blender && sudo tar -xf /tmp/blender.tar.xz -C /opt/blender --strip-components=1
+          echo "BLENDER_PATH=/opt/blender/blender" >> "$GITHUB_ENV"
+      - name: Blender smoke test
+        run: /opt/blender/blender --background --factory-startup --python-expr "import bpy; print('bpy OK', bpy.app.version_string)"
       - name: Render + encode camera study MP4 (50%)
         run: >
           python scripts/render_example.py --mode camera --output output/cam
